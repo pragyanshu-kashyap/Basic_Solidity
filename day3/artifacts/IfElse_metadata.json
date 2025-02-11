@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "marks",
+						"type": "uint256"
+					}
+				],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day3/p1.sol": "IfElse"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day3/p1.sol": {
+			"keccak256": "0x895b3dc05b72ace14535b0773fac9198b2c0e2be6417e4d282e5dea21fc58083",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://36dcad6e123643eece441394cc296670533ebc72c0bedf4c4b1b20d415e77d2f",
+				"dweb:/ipfs/QmRv5twCejPBDAwW56jyBZmduNoNwggb6uw98zG8QCbCVD"
+			]
+		}
+	},
+	"version": 1
+}

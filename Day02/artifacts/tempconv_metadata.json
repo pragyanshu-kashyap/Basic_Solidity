@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "celsius",
+						"type": "int256"
+					}
+				],
+				"name": "conv",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "s",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day02/p1a1.sol": "tempconv"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day02/p1a1.sol": {
+			"keccak256": "0x5de2c929b86768ac0016b3c7541526ff9a10120a3e07f5410f91c021fb080796",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://53ec8f12187d292d25a89ff3c0ebeb911a8b2929e65ccd4c51991f09bb4c5062",
+				"dweb:/ipfs/QmSKFBQ3sr54qULhJofr3jYw8urrQeyE1ZKPeiZH6ZSAVi"
+			]
+		}
+	},
+	"version": 1
+}
