@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "prize",
+						"type": "string"
+					}
+				],
+				"name": "Winner",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "declarePrize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "generateRandomNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"day4/p3.sol": "Lottery"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"day4/p3.sol": {
+			"keccak256": "0xcb7f735b100711d289a714c757b9e2e43f09b921ee85ae42f6fcde7b61062915",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe234adf3ff258178ce8d51191447067efb6c976da4788f2eaa5f9bd43e4fd73",
+				"dweb:/ipfs/QmUnqT2rzrg7zPfZGt4oiHWAgraZtCDUQNrdkFqGD492y5"
+			]
+		}
+	},
+	"version": 1
+}
