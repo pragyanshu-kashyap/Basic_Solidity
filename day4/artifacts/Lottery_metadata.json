@@ -11,34 +11,117 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "number",
+						"name": "winningNumber",
 						"type": "uint256"
 					},
 					{
 						"indexed": false,
-						"internalType": "string",
-						"name": "prize",
-						"type": "string"
+						"internalType": "address",
+						"name": "firstPrizeWinner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "secondPrizeWinner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "thirdPrizeWinner",
+						"type": "address"
 					}
 				],
-				"name": "Winner",
+				"name": "LotteryDrawn",
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "declarePrize",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "lotteryNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "drawLottery",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "generateRandomNumber",
+				"name": "firstPrizeWinner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFirstPrizeWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSecondPrizeWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getThirdPrizeWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "secondPrizeWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "thirdPrizeWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -73,11 +156,11 @@
 	},
 	"sources": {
 		"day4/p3.sol": {
-			"keccak256": "0xcb7f735b100711d289a714c757b9e2e43f09b921ee85ae42f6fcde7b61062915",
+			"keccak256": "0x1053eda6877b0e66f40ece1949db1d7ce70052a2bfddbd500de9e181eb5c6c01",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fe234adf3ff258178ce8d51191447067efb6c976da4788f2eaa5f9bd43e4fd73",
-				"dweb:/ipfs/QmUnqT2rzrg7zPfZGt4oiHWAgraZtCDUQNrdkFqGD492y5"
+				"bzz-raw://628552a082e5e10ea1bb37bd1f7ec15b142e1c9f141c4c9d2ff4fb933f889870",
+				"dweb:/ipfs/QmTcqKt3YMiVrCaYLX77aFnFikyByspcA7o5jM3pvs623u"
 			]
 		}
 	},

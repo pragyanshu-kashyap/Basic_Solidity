@@ -1,36 +1,52 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.8.2<0.9.0;
+pragma solidity ^0.8.0;
 
 contract Lottery {
 
-    // Event to emit when a winner is declared
-    event Winner(uint256 number, string prize);
+    // Declare prize winners
+    address public firstPrizeWinner;
+    address public secondPrizeWinner;
+    address public thirdPrizeWinner;
 
-    // Function to generate a random number (for simplicity, using block.timestamp)
-    function generateRandomNumber() public view returns (uint256) {
-        return uint256(keccak256(abi.encodePacked(block.timestamp))) % 1000;
+    // Event to emit when the lottery is drawn
+    event LotteryDrawn(uint winningNumber, address firstPrizeWinner, address secondPrizeWinner, address thirdPrizeWinner);
+
+    // Function to generate the lottery number and assign the prizes
+    function drawLottery(uint lotteryNumber) public {
+        // Reset previous winners
+        firstPrizeWinner = address(0);
+        secondPrizeWinner = address(0);
+        thirdPrizeWinner = address(0);
+        
+        // Check if the number is divisible by both 3 and 5 for first prize
+        if (lotteryNumber % 3 == 0 && lotteryNumber % 5 == 0) {
+            firstPrizeWinner = msg.sender; // Current caller gets the first prize
+        }
+        // Check if the number is divisible by 7 or 11 for second prize
+        else if (lotteryNumber % 7 == 0 || lotteryNumber % 11 == 0) {
+            secondPrizeWinner = msg.sender; // Current caller gets the second prize
+        }
+        // Check if the number is divisible by 5 but not 10 for third prize
+        else if (lotteryNumber % 5 == 0 && lotteryNumber % 10 != 0) {
+            thirdPrizeWinner = msg.sender; // Current caller gets the third prize
+        }
+
+        // Emit the lottery result event
+        emit LotteryDrawn(lotteryNumber, firstPrizeWinner, secondPrizeWinner, thirdPrizeWinner);
     }
 
-    // Function to determine the prize based on the random number
-    function declarePrize() public {
-        uint256 randomNumber = generateRandomNumber();
-        string memory prize;
+    // Function to check if a given address has won the first prize
+    function getFirstPrizeWinner() public view returns (address) {
+        return firstPrizeWinner;
+    }
 
-        // Check for first prize: Divisible by both 3 and 5
-        if (randomNumber % 3 == 0 && randomNumber % 5 == 0) {
-            prize = "First Prize";
-        }
-        // Check for second prize: Divisible by either 7 or 11
-        else if (randomNumber % 7 == 0 || randomNumber % 11 == 0) {
-            prize = "Second Prize";
-        }
-        // Check for third prize: Divisible by 5 but not 10
-        else if (randomNumber % 5 == 0 && randomNumber % 10 != 0) {
-            prize = "Third Prize";
-        } else {
-            prize = "No Prize"; // If the number doesn't meet any conditions
-        }
+    // Function to check if a given address has won the second prize
+    function getSecondPrizeWinner() public view returns (address) {
+        return secondPrizeWinner;
+    }
 
-        emit Winner(randomNumber, prize);  // Emit the winner event
+    // Function to check if a given address has won the third prize
+    function getThirdPrizeWinner() public view returns (address) {
+        return thirdPrizeWinner;
     }
 }
