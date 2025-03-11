@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "testFactorial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "testFibonacci",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "testIsArmstrong",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "testMax",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "testMin",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"testFactorial(uint256)": {
+					"notice": "Calculates the factorial of a number"
+				},
+				"testFibonacci(uint256)": {
+					"notice": "Generates the nth Fibonacci number"
+				},
+				"testIsArmstrong(uint256)": {
+					"notice": "Checks if a number is an Armstrong number"
+				},
+				"testMax(uint256,uint256)": {
+					"notice": "Finds the maximum of two numbers"
+				},
+				"testMin(uint256,uint256)": {
+					"notice": "Finds the minimum of two numbers"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day7/TestMathLib.sol": "TestMathLib"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day7/Mathp1.sol": {
+			"keccak256": "0x9bcd948ed231d29976a8330f025f12b577cc4b42022690ee456bb65747c73690",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56c995780eedb9ce536f81fef76bcbb4d810f7512bdc65d085f27842fcf9b5f9",
+				"dweb:/ipfs/QmXo4usNrT74qMLRRNJame8jpEV5aHqxD8Fm72ehin5HAU"
+			]
+		},
+		"Day7/TestMathLib.sol": {
+			"keccak256": "0x73c91b0ace55f15a262f254c1d2d56f4fd7b4ea99bb674e8657043c1d3550588",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d5974e50cfcfaec239729b41ae26fbb3f67a304b29137948cf316e498a70afd6",
+				"dweb:/ipfs/QmWvnMEvPGKrAWgPBafb1BbYJAHdVYYzFn1sAR3vP4qnpH"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day7/Mathp2.sol": "CalculatorLib"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day7/Mathp2.sol": {
+			"keccak256": "0xc2ad8875f0f99d957ea40a4d65088f2fe155ec3d0024cac8385104afbba78ab9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc2f1b3348d9fe776a23d39462a6a3d81e7e5e1ff542cc3f18199666ba319844",
+				"dweb:/ipfs/QmRAgvsTNVrqrkgCL4xz3kC8YxJqfZ6tZZXSxNm4LvYRxp"
+			]
+		}
+	},
+	"version": 1
+}

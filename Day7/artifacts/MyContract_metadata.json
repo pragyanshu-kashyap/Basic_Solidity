@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateSquare",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day7/MyContract.sol": "MyContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day7/MyContract.sol": {
+			"keccak256": "0x5aa4e40a943b27d691933f85bd6c551ded86df0f289ccaf97f7d9c5181b31516",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://336b088e2152feb3e095c7518c7c034846bf454a2fb66a98989d1905bbac7f58",
+				"dweb:/ipfs/QmXwSZHdbEULw2ib69U1gcEcEHjFfVYfa586CSTj4dY2Er"
+			]
+		},
+		"Day7/math.sol": {
+			"keccak256": "0x98af9356c2e55890c75df7a036c5d77c240cedcc063e509407f2e43603058f05",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c272d81d02b7c6baf335aa480a1526e77602625f10c68e3d27f86f455901efc",
+				"dweb:/ipfs/QmezGHYVk3hdNyX5ix8X8VX2hs7ib55unDsThsNPdzLvBM"
+			]
+		}
+	},
+	"version": 1
+}

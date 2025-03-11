@@ -1,0 +1,235 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "testAbsolute",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "testAdd",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "testDivide",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "testModulo",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "testMultiply",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "base",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exp",
+						"type": "uint256"
+					}
+				],
+				"name": "testPower",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "testSqrt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract allows users to test different calculator functions",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"testAbsolute(int256)": {
+					"notice": "Finds the absolute value of a number"
+				},
+				"testAdd(int256,int256)": {
+					"notice": "Adds two numbers"
+				},
+				"testDivide(int256,int256)": {
+					"notice": "Divides two numbers"
+				},
+				"testModulo(int256,int256)": {
+					"notice": "Finds the remainder of division"
+				},
+				"testMultiply(int256,int256)": {
+					"notice": "Multiplies two numbers"
+				},
+				"testPower(uint256,uint256)": {
+					"notice": "Raises base to the power of exp"
+				},
+				"testSqrt(uint256)": {
+					"notice": "Computes the square root of a number"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day7/TestMathLib2.sol": "TestMathLib2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day7/Mathp2.sol": {
+			"keccak256": "0xc2ad8875f0f99d957ea40a4d65088f2fe155ec3d0024cac8385104afbba78ab9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc2f1b3348d9fe776a23d39462a6a3d81e7e5e1ff542cc3f18199666ba319844",
+				"dweb:/ipfs/QmRAgvsTNVrqrkgCL4xz3kC8YxJqfZ6tZZXSxNm4LvYRxp"
+			]
+		},
+		"Day7/TestMathLib2.sol": {
+			"keccak256": "0x3d0a4ec69b7c91c91bee0aff34291edca9e5ba769913d031ac2bc397fa186a21",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b80500ab75553ee4d077a35755b3036286e6b512db921ad14705261cd8872f2",
+				"dweb:/ipfs/QmZfGLii25WrW3uyQjZqQsmtBXJW9i3ojmLNpFKm63DyzP"
+			]
+		}
+	},
+	"version": 1
+}
